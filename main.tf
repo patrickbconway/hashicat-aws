@@ -9,6 +9,8 @@ resource aws_vpc "hashicat" {
 
   tags = {
     name = "${var.prefix}-vpc"
+    name = "Billable"
+    name = "Department"
   }
 }
 
@@ -18,6 +20,8 @@ resource aws_subnet "hashicat" {
 
   tags = {
     name = "${var.prefix}-subnet"
+    name = "Billable"
+    name = "Department"
   }
 }
 
@@ -57,6 +61,8 @@ resource aws_security_group "hashicat" {
 
   tags = {
     Name = "${var.prefix}-security-group"
+    name = "Billable"
+    name = "Department"
   }
 }
 
@@ -70,6 +76,8 @@ resource aws_internet_gateway "hashicat" {
 
   tags = {
     Name = "${var.prefix}-internet-gateway"
+    name = "Billable"
+    name = "Department"    
   }
 }
 
